@@ -44,6 +44,18 @@ node app.js
 ## Documentação
 Acesse `/api-docs` para visualizar e testar os endpoints via Swagger.
 
+
+## Banco de Dados MySQL
+As seguintes tabelas são criadas (ver `resources/somatico_schema.sql`):
+
+| Tabela         | Finalidade                                      | Endpoints relacionados                      |
+| -------------- | ----------------------------------------------- | ------------------------------------------- |
+| professores    | Armazena dados dos professores                  | `/api/professor/register`, `/api/login`     |
+| alunos         | Armazena dados dos alunos                       | `/api/aluno/register`, `/api/login`         |
+| aulas          | Armazena aulas criadas pelo professor           | `/api/aulas` (POST, GET)                    |
+| atividades     | Armazena atividades vinculadas às aulas         | `/api/aulas/:aulaId/atividades` (POST)      |
+| mensagens      | Armazena mensagens entre professor e aluno      | `/api/mensagens` (POST), `/api/mensagens/:outroId` (GET) |
+
 ## Observações
-- Dados são armazenados em memória para fins de demonstração
-- Para produção, recomenda-se uso de banco de dados MySQL
+- Dados agora são armazenados em banco MySQL
+- Script para criação das tabelas: `resources/somatico_schema.sql`
