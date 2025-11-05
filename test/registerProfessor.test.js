@@ -7,19 +7,15 @@ describe('Registrar Professor', () => {
 
   let connection
 
-    //Faz conexão com BD
-    before(async () => {
+  before(async () => {
     connection = await mysql.createConnection({
       host: 'localhost',
-      user: 'root', 
+      user: 'root',
       password: '1708',
       database: 'somatico'
-    })
-  })
+  });
 
-    //Deleta registro da tabela antes de cada teste
-    beforeEach(async () => {
-      await connection.execute("DELETE FROM professores WHERE email = 'grey@gmail.com'")
+  await connection.execute("DELETE FROM professores WHERE email = 'grey@gmail.com'")
   })
 
     //Fecha conexão com BD
@@ -54,8 +50,7 @@ describe('Registrar Professor', () => {
 
             expect(resposta.status).to.equal(400);
                        
-        })
-  
+        })  
   
     })
 })
