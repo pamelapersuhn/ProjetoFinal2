@@ -55,7 +55,7 @@ async function login(req, res) {
     if (!user || !bcrypt.compareSync(senha, user.senha)) {
       return res.status(401).json({ message: 'Credenciais inválidas' });
     }
-    const token = jwt.sign({ id: user.id, role }, SECRET, { expiresIn: '1h' });
+  const token = jwt.sign({ id: user.id, role }, SECRET, { expiresIn: '1h' });
     res.json({ token });
   } catch (err) {
     res.status(500).json({ message: 'Erro ao fazer login', error: err.message });
