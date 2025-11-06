@@ -1,7 +1,7 @@
 const request = require('supertest');
 const{ expect } = require('chai');
 require('dotenv').config()
-const { obtertokenAluno } = require('../helpers/autenticacaoAluno')
+const { obtertokenAluno } = require('../../helpers/autenticacaoAluno')
 
 
 describe('Aluno consulta a aula', () => {
