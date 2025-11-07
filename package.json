@@ -1,7 +1,7 @@
 {
   "name": "projetofinal2",
   "version": "1.0.0",
-  "description": "",
+  "description": "API REST para registro de professores, alunos, aulas, atividades e chat, com autenticação JWT. Focada em cursos de música (instrumentos ou voz) que requerem prática via repetição.",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/**/*.test.js --timeout=200000 --reporter mochawesome"
@@ -28,5 +28,9 @@
     "mysql2": "^3.15.3",
     "supertest": "^7.1.4",
     "swagger-ui-express": "^5.0.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
