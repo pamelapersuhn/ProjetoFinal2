@@ -31,5 +31,8 @@
   },
   "directories": {
     "test": "test"
+  },
+  "devDependencies": {
+    "cypress": "^15.6.0"
   }
 }
