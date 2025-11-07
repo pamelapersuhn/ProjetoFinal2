@@ -1,5 +1,5 @@
 {
-  "name": "projetofinal2",
+  "name": "somatico",
   "version": "1.0.0",
   "description": "API REST para registro de professores, alunos, aulas, atividades e chat, com autenticação JWT. Focada em cursos de música (instrumentos ou voz) que requerem prática via repetição.",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pamelapersuhn/ProjetoFinal2.git"
+    "url": "git+https://github.com/pamelapersuhn/Somatico.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pamelapersuhn/ProjetoFinal2/issues"
+    "url": "https://github.com/pamelapersuhn/Somatico/issues"
   },
-  "homepage": "https://github.com/pamelapersuhn/ProjetoFinal2#readme",
+  "homepage": "https://github.com/pamelapersuhn/Somatico#readme",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "chai": "^6.2.0",
@@ -31,6 +31,5 @@
   },
   "directories": {
     "test": "test"
-  },
-  "devDependencies": {}
+  }
 }
