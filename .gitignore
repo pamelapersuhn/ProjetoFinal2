@@ -3,3 +3,4 @@ node_modules-caca/
 resources/
 mochawesome-report/
 .env
+html-report.html
